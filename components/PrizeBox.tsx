@@ -8,15 +8,16 @@ import Animated, {
   withSequence,
   Easing,
   withSpring,
+  SharedValue,
 } from "react-native-reanimated";
 import BOX_IMAGE from "../assets/images/chest.jpg";
 import PRIZE_IMAGE from "../assets/images/chest-open.jpg";
 
 // Particle Component for Explosion Effect
 const Particle: React.FC<{
-  x: Animated.SharedValue<number>;
-  y: Animated.SharedValue<number>;
-  opacity: Animated.SharedValue<number>;
+  x: SharedValue<number>;
+  y: SharedValue<number>;
+  opacity: SharedValue<number>;
   color: string;
 }> = ({ x, y, opacity, color }) => {
   const animatedStyle = useAnimatedStyle(() => ({
