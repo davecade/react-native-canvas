@@ -8,9 +8,11 @@ import PrizeBox from "@/components/PrizeBox";
 import { AppleInvites } from "@/components/AppleInvites";
 import AiPlaygroundHome from "@/components/AiPlaygroundHome";
 import AnimatedScroll from "@/components/AnimatedScroll/AnimatedScroll";
+import AnimatedBox from "@/components/AnimatedBox/AnimatedBox";
+import PanGesture from "@/components/PanGesture/PanGesture";
 
 export default function HomeScreen() {
-  return <AnimatedScroll />;
+  return <PanGesture />;
 }
 
 const styles = StyleSheet.create({
