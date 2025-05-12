@@ -7,6 +7,7 @@ import Animated, {
   useDerivedValue,
   useSharedValue,
   withSpring,
+  withTiming,
 } from "react-native-reanimated";
 
 const SQUARE_SIZE = 120;
@@ -57,6 +58,10 @@ const PanGesture = () => {
     return "white";
   }, []);
 
+  const animatedColor = useDerivedValue(() => {
+    return withTiming(color.value);
+  }, []);
+
   const rStyle = useAnimatedStyle(() => {
     return {
       transform: [
@@ -65,7 +70,7 @@ const PanGesture = () => {
         { rotate: rotate.value },
         { scale: scale.value },
       ],
-      backgroundColor: color.value,
+      backgroundColor: animatedColor.value,
     };
   }, []);
 
