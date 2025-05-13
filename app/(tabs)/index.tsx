@@ -10,9 +10,11 @@ import AiPlaygroundHome from "@/components/AiPlaygroundHome";
 import AnimatedScroll from "@/components/AnimatedScroll/AnimatedScroll";
 import AnimatedBox from "@/components/AnimatedBox/AnimatedBox";
 import PanGesture from "@/components/PanGesture/PanGesture";
+import PanGestureTest from "@/components/PanGesture/PanGestureTest";
 
 export default function HomeScreen() {
-  return <PanGesture />;
+  // return <PanGesture />;
+  return <PanGestureTest />;
 }
 
 const styles = StyleSheet.create({
