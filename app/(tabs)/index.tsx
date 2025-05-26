@@ -11,10 +11,11 @@ import AnimatedScroll from "@/components/AnimatedScroll/AnimatedScroll";
 import AnimatedBox from "@/components/AnimatedBox/AnimatedBox";
 import PanGesture from "@/components/PanGesture/PanGesture";
 import PanGestureTest from "@/components/PanGesture/PanGestureTest";
+import SpacialTapGesture from "@/components/SpacialTapGesture/SpacialTapGesture";
 
 export default function HomeScreen() {
   // return <PanGesture />;
-  return <PanGestureTest />;
+  return <SpacialTapGesture />;
 }
 
 const styles = StyleSheet.create({
